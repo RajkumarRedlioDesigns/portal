@@ -1,0 +1,21 @@
+{
+  "name": "redlio-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js --prefix server",
+    "client": "npm start --prefix redlio-portal-v2",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server-install": "npm install --prefix server",
+    "client-install": "npm install --prefix redlio-portal-v2",
+    "module-install": "concurrently \"npm run server-install\" \"npm run client-install\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
